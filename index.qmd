@@ -28,18 +28,8 @@ fig-dpi: 300
 
 library(tidyverse)
 library(ggplot2)
-
-
 set.seed(1)
-
 knitr::opts_chunk$set(dev = "ragg_png")
-
-
-
-# source("../../7_RS_AGB/code/0000_setup.R")
-# source("../../7_RS_AGB/code/9999_functions_modeling.R")
-
-
 ```
 
 #  {background-color="white"}
@@ -331,6 +321,7 @@ Tompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.
 R package: **[https://ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)**
 :::
 
+This presentation: **[https://ptompalski.github.io/RSYC_overview/](https://ptompalski.github.io/RSYC_overview/)**
 
 ## References {visibility="uncounted"}
 
