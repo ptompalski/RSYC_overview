@@ -1,0 +1,339 @@
+---
+title: ""
+author: ""
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    embed-resources: true
+    # logo: images\NRCan_CFS_logo_PT_englishOnly_small.png
+    footer: "Remote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+    margin: 0.1
+    slide-number: true
+    show-slide-number: all
+    scrollable: false
+    chalkboard: false
+    revealjs-plugins:
+     - plugin/fullscreen
+    css: assets/style.css
+editor: source
+bibliography: references.bib
+fig-dpi: 300
+---
+
+```{r}
+#| echo: false
+#| eval: true
+#| include: false
+
+library(tidyverse)
+library(ggplot2)
+
+
+set.seed(1)
+
+knitr::opts_chunk$set(dev = "ragg_png")
+
+
+
+# source("../../7_RS_AGB/code/0000_setup.R")
+# source("../../7_RS_AGB/code/9999_functions_modeling.R")
+
+
+```
+
+#  {background-color="white"}
+
+::: title-center
+Remote Sensing-based Yield Curves (RSYC) for Canada's Forested Ecozones
+:::
+
+::: threequarters-image
+![](images/RSYC_authors.png){fig-alt="authors" height=35%}
+:::
+
+::: half-image
+![](images/NRCan_CFS_logo_PT.png){fig-alt="NRCan-CFS-logo"}
+:::
+
+::: footer
+:::
+
+
+## Yield curves & growth simulators
+
+
+::: columns
+::: {.column width="50%"}
+-   function of age & species
+-   project forest attributes into the future
+:::
+
+::: {.column width="50%"}
+```{r, fig.asp=1, fig.width=4}
+
+CRdeclining <- function(age, b1, b2, b3) { 
+  b1 * exp(-b2 * age) * (1 - exp(-b2 * age))^b3
+  # Fortin, M., & Lavoie, J.-F. (2022). Reconciling individual-based forest growth models with landscape-level studies through a meta-modelling approach. Canadian Journal of Forest Research. https://doi.org/10.1139/cjfr-2022-0002
+}
+
+CRdeclining2 <- function(age, b1, b2, b3, b4) { #four-parameter declining CR 
+  b1 * exp(-b4 * age) * (1 - exp(-b2 * age))^b3
+  
+}
+
+CR <- function(age, b1, b2, b3) { #Chapman-Richards
+  b1 * (1 - exp(-b2 * age))^b3
+}
+
+
+
+
+ggplot(data=NULL) + 
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.05,  1.59, -0.0001)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.04,  1.59, 0.003)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 250, 0.025,  1, 0.01)))+
+
+  labs(x="Age", y="e.g. AGB")
+
+```
+:::
+:::
+
+## Carbon accounting
+
+::: columns
+::: {.column width="60%"}
+![https://natural-resources.canada.ca/climate-change/climate-change-impacts-forests/carbon-accounting/13087](images/CBMCFS3.png){fig-alt="CBM-CFS3 architecture"}
+:::
+
+::: {.column .text60 width="40%"}
+National Forest Carbon Monitoring, Accounting and Reporting System (NFCMARS) is designed to:
+
+-   estimate past changes in forest carbon stocks, such as from 1990 to the present (**monitoring**)
+
+-   predict changes in carbon stocks, based on scenarios of future disturbance rates and management actions, in the next 2 to 3 decades (**projection**)
+:::
+:::
+
+
+
+## Existing models - limitations
+
+::: {.notes}
+there are over 100 Mha of forest for which we have no yield curves. And while we do not need to report on those forests, it is of great scientific interest to also quantify the C balance of those forests, as is the plan for the next generation system.  The curves developed in this project will enable national-scale coverage, inculding unmanaged forests
+:::
+
+::: columns
+::: {.column width="50%" .text80}
+
+-   spatial extent (single jurisdiction, Canada-wide)
+
+-   developed for the dominant (most common) species only
+
+-   developed for managed forests
+
+-   often based on a limited number of samples
+
+:::
+
+::: {.column width="50%"}
+![](images/growthSimulatorsCanada_v2.png)
+:::
+
+:::
+
+
+## [Aim: **R**emote **S**ensing-based **Y**ield **C**urves (RSYC)]{.r-fit-text}
+
+-   Entire Canada <small>(all treed pixels)</small>
+
+-   Species-specific <small>(not only most common tree species)</small>
+
+-   Consistent methodology
+
+-   Locally representative
+
+-   Fine level of spatial detail
+
+-   Designed to work with RS data
+
+## Data
+
+::: center
+![](images/data.png)
+:::
+
+::: text60
+-   Landsat-derived **AGB** time series (1984-2021) [@matasci_large-area_2018]
+-   Landsat-derived **age** [@maltman_estimating_2023]
+-   Landsat-derived dominant **species** [@hermosilla_mapping_2022]
+:::
+
+## Tiling
+
+![](images/RSYC_tiling.png){fig-align="center"}
+
+
+## Approach
+
+::: columns
+::: {.column width="60%"}
+
+1. Build a chronosequence of AGB by combining multiple pixel-level AGB time series
+2. Develop a filtering approach to screen Landsat-derived AGB 
+3. Fit non-linear mixed effects models (NLME)
+
+:::
+
+::: {.column width="40%"}
+
+:::
+:::
+
+![](images/filteringSteps_Slides.png){.absolute top=0 right=0 height="100%"}
+
+
+## Approach
+![](images/paper_workflow.png){fig-align="center"}
+
+
+
+## Modeling
+
+::: columns
+::: {.column width="60%"}
+Model form after [@fortin_reconciling_2022]:
+
+$$
+AGB = \beta_1  e^{-\beta_4 age}  (1 - e^{-\beta_2  age})^{\beta_3}
+$$
+
+NLME:
+
+-   nested tile/pixel random effect
+-   random parameter: $\beta_1$
+
+
+:::
+
+::: {.column width="40%"}
+```{r, fig.asp=1, fig.width=3}
+
+ggplot(data=NULL) + 
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.091 , 5, 0.002)))+
+  geom_line(data=NULL, aes(x=1:150, y=CR(1:150, 200, 0.1 , 6)), color="red")+
+  labs(x="Age", y="e.g. AGB")
+
+```
+:::
+:::
+
+
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_speciesSpecific.png" background-size="contain" background-repeat="no-repeat"}
+
+
+## Results
+
+::: columns
+::: {.column width="50%" .text80}
+
+![](images/AGBoverTimeAnim_RSYC_generic.gif)
+
+:::
+
+::: {.column width="50%" .text80 }
+
+National AGB yield curves (N=1892)
+
+Multi-species:
+
+- Generic (all species) – 389
+- Coniferous – 355
+- Broadleaf – 184
+
+Species-specific:
+
+- 27 species-specific models (some for a single tile only, up to 308 for black spruce)
+
+:::
+
+:::
+
+## Model evaluation
+
+::: columns
+::: {.column width="60%"}
+
+- Yield curves represent the average AGB in the tile
+
+- Evaluation – compare mean AGB<sub>RSYC</sub> with AGB<sub>REF</sub> by 20 year age classes
+
+
+
+:::
+::: {.column width="40%"  }
+![](images/RSYC_evaluation_approach.png)
+
+:::
+:::
+
+## Model evaluation
+
+::: columns
+::: {.column width="50%" .text80}
+
+MAGPlot data:
+ 
+ - Over 50k plots, harmonized dataset
+ - Independent 
+ - Mix of different sampling designs
+
+- Raking ratio: weights (per plot) to adjust for under- or over-representation of different forest strata (e.g. plots located in more productive stands)
+
+:::
+::: {.column width="50%"  }
+![](images/MAGPlot_map.png)
+
+:::
+:::
+
+
+
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_validation_example.png" background-size="contain" background-repeat="no-repeat"}
+
+##  {transition="fade" transition-speed="slow" background-image="images/scatterplots_RSYC.png" background-size="contain" background-repeat="no-repeat"}
+
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_comparisonToUng2009_v2.png" background-size="contain" background-repeat="no-repeat"}
+
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_vs_metamodels.png" background-size="contain" background-repeat="no-repeat"}
+
+## Next steps
+
+- Uncertainty (confidence intervals)
+- Different spatial units (ecodistricts, ecoregions) 
+- Volume instead of AGB
+- Ensemble models (multiple AGB inputs)
+
+
+
+## Questions?
+
+<br>
+
+::: {.text60}
+Publications (open access):
+
+Tompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. **National remote sensing-derived aboveground biomass yield curves for Canada**. Forestry: An International Journal Of Forest Research. [https://doi.org/10.1093/forestry/cpaf067](doi.org/10.1093/forestry/cpaf067)
+
+Tompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. **Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data**. Forest Ecology and Management 561, 121894. [https://doi.org/10.1016/j.foreco.2024.121894](doi.org/10.1016/j.foreco.2024.121894)
+
+R package: **[https://ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)**
+:::
+
+
+## References {visibility="uncounted"}
+
+::: {#refs}
+:::
+
