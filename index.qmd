@@ -136,7 +136,7 @@ there are over 100 Mha of forest for which we have no yield curves. And while we
 
 ## [Aim: **R**emote **S**ensing-based **Y**ield **C**urves (RSYC)]{.r-fit-text}
 
--   Entire Canada <small>(all treed pixels)</small>
+-   National coverage <small>(all treed pixels)</small>
 
 -   Species-specific <small>(not only most common tree species)</small>
 
@@ -302,7 +302,7 @@ MAGPlot data:
 
 - Uncertainty (confidence intervals)
 - Different spatial units (ecodistricts, ecoregions) 
-- Volume instead of AGB
+- Additional attributes, e.g., volume
 - Ensemble models (multiple AGB inputs)
 
 
@@ -314,14 +314,15 @@ MAGPlot data:
 ::: {.text60}
 Publications (open access):
 
-Tompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. **National remote sensing-derived aboveground biomass yield curves for Canada**. Forestry: An International Journal Of Forest Research. [https://doi.org/10.1093/forestry/cpaf067](doi.org/10.1093/forestry/cpaf067)
+Tompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. **National remote sensing-derived aboveground biomass yield curves for Canada**. Forestry: An International Journal Of Forest Research. [doi.org/10.1093/forestry/cpaf067](https://doi.org/10.1093/forestry/cpaf067)
 
-Tompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. **Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data**. Forest Ecology and Management 561, 121894. [https://doi.org/10.1016/j.foreco.2024.121894](doi.org/10.1016/j.foreco.2024.121894)
+Tompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. **Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data**. Forest Ecology and Management 561, 121894. [doi.org/10.1016/j.foreco.2024.121894](https://doi.org/10.1016/j.foreco.2024.121894)
 
 R package: **[https://ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)**
-:::
 
 This presentation: **[https://ptompalski.github.io/RSYC_overview/](https://ptompalski.github.io/RSYC_overview/)**
+:::
+
 
 ## References {visibility="uncounted"}
 

@@ -25,7 +25,7 @@
     "href": "index.html#aim-remote-sensing-based-yield-curves-rsyc",
     "title": "index",
     "section": "Aim: Remote Sensing-based Yield Curves (RSYC)",
-    "text": "Aim: Remote Sensing-based Yield Curves (RSYC)\n\nEntire Canada (all treed pixels)\nSpecies-specific (not only most common tree species)\nConsistent methodology\nLocally representative\nFine level of spatial detail\nDesigned to work with RS data"
+    "text": "Aim: Remote Sensing-based Yield Curves (RSYC)\n\nNational coverage (all treed pixels)\nSpecies-specific (not only most common tree species)\nConsistent methodology\nLocally representative\nFine level of spatial detail\nDesigned to work with RS data"
   },
   {
     "objectID": "index.html#data",
@@ -88,14 +88,14 @@
     "href": "index.html#next-steps",
     "title": "index",
     "section": "Next steps",
-    "text": "Next steps\n\nUncertainty (confidence intervals)\nDifferent spatial units (ecodistricts, ecoregions)\nVolume instead of AGB\nEnsemble models (multiple AGB inputs)"
+    "text": "Next steps\n\nUncertainty (confidence intervals)\nDifferent spatial units (ecodistricts, ecoregions)\nAdditional attributes, e.g., volume\nEnsemble models (multiple AGB inputs)"
   },
   {
     "objectID": "index.html#questions",
     "href": "index.html#questions",
     "title": "index",
     "section": "Questions?",
-    "text": "Questions?\n\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. https://doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. https://doi.org/10.1016/j.foreco.2024.121894\nR package: https://ptompalski.github.io/RSYC\n\nThis presentation: https://ptompalski.github.io/RSYC_overview/"
+    "text": "Questions?\n\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. doi.org/10.1016/j.foreco.2024.121894\nR package: https://ptompalski.github.io/RSYC\nThis presentation: https://ptompalski.github.io/RSYC_overview/"
   },
   {
     "objectID": "index.html#references",
