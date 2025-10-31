@@ -3,6 +3,10 @@ Presentation on Remote Sensing-based Yield Curves (RSYC)
 
 **[https://ptompalski.github.io/RSYC_overview/](https://ptompalski.github.io/RSYC_overview/)**
 
+a shorter, more concise version is also available: [https://ptompalski.github.io/RSYC_overview/short.html](https://ptompalski.github.io/RSYC_overview/short.html)
+
+
+
 
 ## Publications (open access):
 
