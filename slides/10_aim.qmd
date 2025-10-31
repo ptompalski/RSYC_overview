@@ -1,0 +1,13 @@
+## [Aim: **R**emote **S**ensing-based **Y**ield **C**urves (RSYC)]{.r-fit-text}
+
+-   National coverage <small>(all treed pixels)</small>
+
+-   Species-specific <small>(not only most common tree species)</small>
+
+-   Consistent methodology
+
+-   Locally representative
+
+-   Fine level of spatial detail
+
+-   Designed to work with RS data

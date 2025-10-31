@@ -1,0 +1,28 @@
+#  {background-color="white"}
+
+::: title-center
+Remote Sensing-based Yield Curves (RSYC) for Canada's Forested Ecozones
+:::
+
+::: threequarters-image
+![](images/RSYC_authors.png){fig-alt="authors" height=35%}
+:::
+
+::: half-image
+![](images/NRCan_CFS_logo_PT.png){fig-alt="NRCan-CFS-logo"}
+:::
+
+::: footer
+:::
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| include: false
+
+library(tidyverse)
+library(ggplot2)
+set.seed(1)
+knitr::opts_chunk$set(dev = "ragg_png")
+```

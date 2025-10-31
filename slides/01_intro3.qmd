@@ -1,0 +1,24 @@
+## Existing models - limitations
+
+::: {.notes}
+there are over 100 Mha of forest for which we have no yield curves. And while we do not need to report on those forests, it is of great scientific interest to also quantify the C balance of those forests, as is the plan for the next generation system.  The curves developed in this project will enable national-scale coverage, inculding unmanaged forests
+:::
+
+::: columns
+::: {.column width="50%" .text80}
+
+-   spatial extent (single jurisdiction, Canada-wide)
+
+-   developed for the dominant (most common) species only
+
+-   developed for managed forests
+
+-   often based on a limited number of samples
+
+:::
+
+::: {.column width="50%"}
+![](images/growthSimulatorsCanada_v2.png)
+:::
+
+:::

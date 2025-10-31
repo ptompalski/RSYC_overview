@@ -1,0 +1,17 @@
+## Model evaluation
+
+::: columns
+::: {.column width="60%"}
+
+- Yield curves represent the average AGB in the tile
+
+- Evaluation – compare mean AGB<sub>RSYC</sub> with AGB<sub>REF</sub> by 20 year age classes
+
+
+
+:::
+::: {.column width="40%"  }
+![](images/RSYC_evaluation_approach.png)
+
+:::
+:::

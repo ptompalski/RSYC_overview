@@ -1,0 +1,1 @@
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_validation_example.png" background-size="contain" background-repeat="no-repeat"}

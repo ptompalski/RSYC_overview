@@ -1,0 +1,4 @@
+
+
+
+##  {transition="fade" transition-speed="slow" background-image="images/scatterplots_RSYC.png" background-size="contain" background-repeat="no-repeat"}

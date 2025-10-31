@@ -1,0 +1,38 @@
+## Yield curves & growth simulators
+
+::: columns
+::: {.column width="50%"}
+-   function of age & species
+-   project forest attributes into the future
+:::
+
+::: {.column width="50%"}
+```{r, fig.asp=1, fig.width=4}
+
+CRdeclining <- function(age, b1, b2, b3) { 
+  b1 * exp(-b2 * age) * (1 - exp(-b2 * age))^b3
+  # Fortin, M., & Lavoie, J.-F. (2022). Reconciling individual-based forest growth models with landscape-level studies through a meta-modelling approach. Canadian Journal of Forest Research. https://doi.org/10.1139/cjfr-2022-0002
+}
+
+CRdeclining2 <- function(age, b1, b2, b3, b4) { #four-parameter declining CR 
+  b1 * exp(-b4 * age) * (1 - exp(-b2 * age))^b3
+  
+}
+
+CR <- function(age, b1, b2, b3) { #Chapman-Richards
+  b1 * (1 - exp(-b2 * age))^b3
+}
+
+
+
+
+ggplot(data=NULL) + 
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.05,  1.59, -0.0001)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.04,  1.59, 0.003)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 250, 0.025,  1, 0.01)))+
+
+  labs(x="Age", y="e.g. AGB")
+
+```
+:::
+:::

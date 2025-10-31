@@ -1,0 +1,1 @@
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_comparisonToUng2009_v2.png" background-size="contain" background-repeat="no-repeat"}

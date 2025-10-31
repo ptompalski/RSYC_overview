@@ -1,0 +1,15 @@
+## Carbon accounting
+
+::: columns
+::: {.column width="60%"}
+![https://natural-resources.canada.ca/climate-change/climate-change-impacts-forests/carbon-accounting/13087](images/CBMCFS3.png){fig-alt="CBM-CFS3 architecture"}
+:::
+
+::: {.column .text60 width="40%"}
+National Forest Carbon Monitoring, Accounting and Reporting System (NFCMARS) is designed to:
+
+-   estimate past changes in forest carbon stocks, such as from 1990 to the present (**monitoring**)
+
+-   predict changes in carbon stocks, based on scenarios of future disturbance rates and management actions, in the next 2 to 3 decades (**projection**)
+:::
+:::

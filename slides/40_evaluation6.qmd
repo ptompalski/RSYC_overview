@@ -1,0 +1,1 @@
+##  {transition="fade" transition-speed="slow" background-image="images/RSYC_vs_metamodels.png" background-size="contain" background-repeat="no-repeat"}

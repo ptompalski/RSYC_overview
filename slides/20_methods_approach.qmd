@@ -1,0 +1,17 @@
+## Approach
+
+::: columns
+::: {.column width="60%"}
+
+1. Build a chronosequence of AGB by combining multiple pixel-level AGB time series
+2. Develop a filtering approach to screen Landsat-derived AGB 
+3. Fit non-linear mixed effects models (NLME)
+
+:::
+
+::: {.column width="40%"}
+
+:::
+:::
+
+![](images/filteringSteps_Slides.png){.absolute top=0 right=0 height="100%"}

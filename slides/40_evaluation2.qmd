@@ -1,0 +1,19 @@
+## Model evaluation
+
+::: columns
+::: {.column width="50%" .text80}
+
+MAGPlot data:
+ 
+ - Over 50k plots, harmonized dataset
+ - Independent 
+ - Mix of different sampling designs
+
+- Raking ratio: weights (per plot) to adjust for under- or over-representation of different forest strata (e.g. plots located in more productive stands)
+
+:::
+::: {.column width="50%"  }
+![](images/MAGPlot_map.png)
+
+:::
+:::

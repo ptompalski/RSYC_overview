@@ -1,0 +1,43 @@
+---
+title: ""
+author: ""
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    embed-resources: true
+    # logo: images\NRCan_CFS_logo_PT_englishOnly_small.png
+    footer: "Remote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+    margin: 0.1
+    slide-number: true
+    show-slide-number: all
+    scrollable: false
+    chalkboard: false
+    revealjs-plugins:
+     - plugin/fullscreen
+    css: assets/style.css
+editor: source
+fig-dpi: 300
+---
+{{< include slides/00_title.qmd >}}
+
+
+
+<!-- intro - what are yield curves? -->
+{{< include slides/01_intro.qmd >}}
+
+
+<!-- workflow -->
+{{< include slides/20_methods_workflow.qmd >}}
+
+<!-- results -->
+{{< include slides/30_results1.qmd >}}
+
+<!-- validatation -->
+{{< include slides/40_evaluation3.qmd >}}
+{{< include slides/40_evaluation6.qmd >}}
+
+<!-- next steps -->
+{{< include slides/50_nextSteps.qmd >}}
+
+{{< include slides/88_last.qmd >}}

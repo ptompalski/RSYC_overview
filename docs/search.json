@@ -88,7 +88,7 @@
     "href": "index.html#next-steps",
     "title": "index",
     "section": "Next steps",
-    "text": "Next steps\n\nUncertainty (confidence intervals)\nDifferent spatial units (ecodistricts, ecoregions)\nAdditional attributes, e.g., volume\nEnsemble models (multiple AGB inputs)"
+    "text": "Next steps\n\nCharacterize uncertainty associated with yield curves\nGenerate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)\nDevelop curves for additional attributes (e.g. volume)\nDevelop curves using outputs of ensemble models (i.e., multiple AGB inputs)"
   },
   {
     "objectID": "index.html#questions",
@@ -103,5 +103,152 @@
     "title": "index",
     "section": "References",
     "text": "References\n\n\nFortin, Mathieu, and Jean-François Lavoie. 2022. “Reconciling Individual-Based Forest Growth Models with Landscape-Level Studies Through a Meta-Modelling Approach.” Canadian Journal of Forest Research, April. https://doi.org/10.1139/cjfr-2022-0002.\n\n\nHermosilla, Txomin, Alex Bastyr, Nicholas C Coops, Joanne C White, and Michael A Wulder. 2022. “Mapping the Presence and Distribution of Tree Species in Canada’s Forested Ecosystems.” Remote Sensing of Environment 282 (December): 113276. https://doi.org/10.1016/j.rse.2022.113276.\n\n\nMaltman, James C., Txomin Hermosilla, Michael A. Wulder, Nicholas C. Coops, and Joanne C. White. 2023. “Estimating and Mapping Forest Age Across Canada’s Forested Ecosystems.” Remote Sensing of Environment 290 (May): 113529. https://doi.org/10.1016/j.rse.2023.113529.\n\n\nMatasci, Giona, Txomin Hermosilla, Michael A. Wulder, Joanne C. White, Nicholas C. Coops, Geordie W. Hobart, and Harold S. J. Zald. 2018. “Large-Area Mapping of Canadian Boreal Forest Cover, Height, Biomass and Other Structural Attributes Using Landsat Composites and Lidar Plots.” Remote Sensing of Environment 209 (May): 90–106. https://doi.org/10.1016/j.rse.2017.12.020.\n\n\n\n\n\nRemote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+  },
+  {
+    "objectID": "short.html#yield-curves-growth-simulators",
+    "href": "short.html#yield-curves-growth-simulators",
+    "title": "index",
+    "section": "Yield curves & growth simulators",
+    "text": "Yield curves & growth simulators\n\n\n\nfunction of age & species\nproject forest attributes into the future"
+  },
+  {
+    "objectID": "short.html#questions",
+    "href": "short.html#questions",
+    "title": "index",
+    "section": "Questions?",
+    "text": "Questions?\n\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. doi.org/10.1016/j.foreco.2024.121894\nR package: https://ptompalski.github.io/RSYC\nThis presentation: https://ptompalski.github.io/RSYC_overview/\n\n\n\n\nRemote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+  },
+  {
+    "objectID": "short.html#references",
+    "href": "short.html#references",
+    "title": "index",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nRemote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+  },
+  {
+    "objectID": "short.html#approach",
+    "href": "short.html#approach",
+    "title": "index",
+    "section": "Approach",
+    "text": "Approach"
+  },
+  {
+    "objectID": "short.html#next-steps",
+    "href": "short.html#next-steps",
+    "title": "index",
+    "section": "Next steps",
+    "text": "Next steps\n\nCharacterize uncertainty associated with yield curves\nGenerate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)\nDevelop curves for additional attributes (e.g. volume)\nDevelop curves using outputs of ensemble models (i.e., multiple AGB inputs)"
+  },
+  {
+    "objectID": "index.html#yield-curves-growth-simulators-1",
+    "href": "index.html#yield-curves-growth-simulators-1",
+    "title": "index",
+    "section": "Yield curves & growth simulators",
+    "text": "Yield curves & growth simulators\n\n\n\nfunction of age & species\nproject forest attributes into the future"
+  },
+  {
+    "objectID": "index.html#carbon-accounting-1",
+    "href": "index.html#carbon-accounting-1",
+    "title": "index",
+    "section": "Carbon accounting",
+    "text": "Carbon accounting\n\n\n\n\n\nhttps://natural-resources.canada.ca/climate-change/climate-change-impacts-forests/carbon-accounting/13087\n\n\n\nNational Forest Carbon Monitoring, Accounting and Reporting System (NFCMARS) is designed to:\n\nestimate past changes in forest carbon stocks, such as from 1990 to the present (monitoring)\npredict changes in carbon stocks, based on scenarios of future disturbance rates and management actions, in the next 2 to 3 decades (projection)"
+  },
+  {
+    "objectID": "index.html#existing-models---limitations-1",
+    "href": "index.html#existing-models---limitations-1",
+    "title": "index",
+    "section": "Existing models - limitations",
+    "text": "Existing models - limitations\n\nthere are over 100 Mha of forest for which we have no yield curves. And while we do not need to report on those forests, it is of great scientific interest to also quantify the C balance of those forests, as is the plan for the next generation system.  The curves developed in this project will enable national-scale coverage, inculding unmanaged forests\n\n\n\n\nspatial extent (single jurisdiction, Canada-wide)\ndeveloped for the dominant (most common) species only\ndeveloped for managed forests\noften based on a limited number of samples"
+  },
+  {
+    "objectID": "index.html#aim-remote-sensing-based-yield-curves-rsyc-1",
+    "href": "index.html#aim-remote-sensing-based-yield-curves-rsyc-1",
+    "title": "index",
+    "section": "Aim: Remote Sensing-based Yield Curves (RSYC)",
+    "text": "Aim: Remote Sensing-based Yield Curves (RSYC)\n\nNational coverage (all treed pixels)\nSpecies-specific (not only most common tree species)\nConsistent methodology\nLocally representative\nFine level of spatial detail\nDesigned to work with RS data"
+  },
+  {
+    "objectID": "index.html#data-1",
+    "href": "index.html#data-1",
+    "title": "index",
+    "section": "Data",
+    "text": "Data\n\n\n\n\n\nLandsat-derived AGB time series (1984-2021) (Matasci et al. 2018)\nLandsat-derived age (Maltman et al. 2023)\nLandsat-derived dominant species (Hermosilla et al. 2022)"
+  },
+  {
+    "objectID": "index.html#tiling-1",
+    "href": "index.html#tiling-1",
+    "title": "index",
+    "section": "Tiling",
+    "text": "Tiling"
+  },
+  {
+    "objectID": "index.html#approach-2",
+    "href": "index.html#approach-2",
+    "title": "index",
+    "section": "Approach",
+    "text": "Approach\n\n\n\nBuild a chronosequence of AGB by combining multiple pixel-level AGB time series\nDevelop a filtering approach to screen Landsat-derived AGB\nFit non-linear mixed effects models (NLME)"
+  },
+  {
+    "objectID": "index.html#approach-3",
+    "href": "index.html#approach-3",
+    "title": "index",
+    "section": "Approach",
+    "text": "Approach"
+  },
+  {
+    "objectID": "index.html#modeling-1",
+    "href": "index.html#modeling-1",
+    "title": "index",
+    "section": "Modeling",
+    "text": "Modeling\n\n\nModel form after (Fortin and Lavoie 2022):\n\\[\nAGB = \\beta_1  e^{-\\beta_4 age}  (1 - e^{-\\beta_2  age})^{\\beta_3}\n\\]\nNLME:\n\nnested tile/pixel random effect\nrandom parameter: \\(\\beta_1\\)"
+  },
+  {
+    "objectID": "index.html#results-1",
+    "href": "index.html#results-1",
+    "title": "index",
+    "section": "Results",
+    "text": "Results\n\n\n\n\nNational AGB yield curves (N=1892)\nMulti-species:\n\nGeneric (all species) – 389\nConiferous – 355\nBroadleaf – 184\n\nSpecies-specific:\n\n27 species-specific models (some for a single tile only, up to 308 for black spruce)"
+  },
+  {
+    "objectID": "index.html#model-evaluation-2",
+    "href": "index.html#model-evaluation-2",
+    "title": "index",
+    "section": "Model evaluation",
+    "text": "Model evaluation\n\n\n\nYield curves represent the average AGB in the tile\nEvaluation – compare mean AGBRSYC with AGBREF by 20 year age classes"
+  },
+  {
+    "objectID": "index.html#model-evaluation-3",
+    "href": "index.html#model-evaluation-3",
+    "title": "index",
+    "section": "Model evaluation",
+    "text": "Model evaluation\n\n\nMAGPlot data:\n\nOver 50k plots, harmonized dataset\nIndependent\nMix of different sampling designs\nRaking ratio: weights (per plot) to adjust for under- or over-representation of different forest strata (e.g. plots located in more productive stands)"
+  },
+  {
+    "objectID": "index.html#next-steps-1",
+    "href": "index.html#next-steps-1",
+    "title": "index",
+    "section": "Next steps",
+    "text": "Next steps\n\nCharacterize uncertainty associated with yield curves\nGenerate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)\nDevelop curves for additional attributes (e.g. volume)\nDevelop curves using outputs of ensemble models (i.e., multiple AGB inputs)"
+  },
+  {
+    "objectID": "index.html#questions-1",
+    "href": "index.html#questions-1",
+    "title": "index",
+    "section": "Questions?",
+    "text": "Questions?\n\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. doi.org/10.1016/j.foreco.2024.121894\nR package: https://ptompalski.github.io/RSYC\nThis presentation: https://ptompalski.github.io/RSYC_overview/"
+  },
+  {
+    "objectID": "index.html#references-1",
+    "href": "index.html#references-1",
+    "title": "index",
+    "section": "References",
+    "text": "References\n\n\nFortin, Mathieu, and Jean-François Lavoie. 2022. “Reconciling Individual-Based Forest Growth Models with Landscape-Level Studies Through a Meta-Modelling Approach.” Canadian Journal of Forest Research, April. https://doi.org/10.1139/cjfr-2022-0002.\n\n\nHermosilla, Txomin, Alex Bastyr, Nicholas C Coops, Joanne C White, and Michael A Wulder. 2022. “Mapping the Presence and Distribution of Tree Species in Canada’s Forested Ecosystems.” Remote Sensing of Environment 282 (December): 113276. https://doi.org/10.1016/j.rse.2022.113276.\n\n\nMaltman, James C., Txomin Hermosilla, Michael A. Wulder, Nicholas C. Coops, and Joanne C. White. 2023. “Estimating and Mapping Forest Age Across Canada’s Forested Ecosystems.” Remote Sensing of Environment 290 (May): 113529. https://doi.org/10.1016/j.rse.2023.113529.\n\n\nMatasci, Giona, Txomin Hermosilla, Michael A. Wulder, Joanne C. White, Nicholas C. Coops, Geordie W. Hobart, and Harold S. J. Zald. 2018. “Large-Area Mapping of Canadian Boreal Forest Cover, Height, Biomass and Other Structural Attributes Using Landsat Composites and Lidar Plots.” Remote Sensing of Environment 209 (May): 90–106. https://doi.org/10.1016/j.rse.2017.12.020.\n\n\n\n\n\nRemote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "index",
+    "section": "",
+    "text": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones"
   }
 ]

@@ -1,0 +1,3 @@
+## Tiling
+
+![](images/RSYC_tiling.png){fig-align="center"}

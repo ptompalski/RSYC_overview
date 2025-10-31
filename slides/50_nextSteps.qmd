@@ -1,0 +1,6 @@
+## Next steps
+
+ - Characterize uncertainty associated with yield curves
+ - Generate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)
+ - Develop curves for additional attributes (e.g. volume)
+ - Develop curves using outputs of ensemble models (i.e., multiple AGB inputs)

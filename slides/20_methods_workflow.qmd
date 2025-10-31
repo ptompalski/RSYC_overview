@@ -1,0 +1,3 @@
+## Approach
+![](images/paper_workflow.png){fig-align="center"}
+
