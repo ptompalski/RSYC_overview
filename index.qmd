@@ -32,9 +32,9 @@ fig-dpi: 300
 
 
 <!-- workflow -->
+{{< include slides/20_methods_approach.qmd >}}
 {{< include slides/20_methods_data.qmd >}}
 {{< include slides/20_methods_tiling.qmd >}}
-{{< include slides/20_methods_approach.qmd >}}
 {{< include slides/20_methods_workflow.qmd >}}
 {{< include slides/21_methods_modeling.qmd >}}
 
