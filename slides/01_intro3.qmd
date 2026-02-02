@@ -7,9 +7,9 @@ there are over 100 Mha of forest for which we have no yield curves. And while we
 ::: columns
 ::: {.column width="50%" .text80}
 
--   spatial extent (single jurisdiction, Canada-wide)
+-   spatial extent (e.g. single jurisdiction)
 
--   developed for the dominant (most common) species only
+-   developed for the most common species only
 
 -   developed for managed forests
 

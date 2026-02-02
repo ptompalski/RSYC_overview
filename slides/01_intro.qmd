@@ -4,6 +4,8 @@
 ::: {.column width="50%"}
 -   function of age & species
 -   project forest attributes into the future
+-   yield curves: average stand attribute vs age
+-   growth simulators: more complex, simulate multiple linked stand attributes through time
 :::
 
 ::: {.column width="50%"}

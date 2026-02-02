@@ -4,7 +4,7 @@
     "href": "index.html#yield-curves-growth-simulators",
     "title": "index",
     "section": "Yield curves & growth simulators",
-    "text": "Yield curves & growth simulators\n\n\n\nfunction of age & species\nproject forest attributes into the future"
+    "text": "Yield curves & growth simulators\n\n\n\nfunction of age & species\nproject forest attributes into the future\nyield curves: average stand attribute vs age\ngrowth simulators: more complex, simulate multiple linked stand attributes through time"
   },
   {
     "objectID": "index.html#carbon-accounting",
@@ -18,7 +18,7 @@
     "href": "index.html#existing-models---limitations",
     "title": "index",
     "section": "Existing models - limitations",
-    "text": "Existing models - limitations\n\nthere are over 100 Mha of forest for which we have no yield curves. And while we do not need to report on those forests, it is of great scientific interest to also quantify the C balance of those forests, as is the plan for the next generation system.  The curves developed in this project will enable national-scale coverage, inculding unmanaged forests\n\n\n\n\nspatial extent (single jurisdiction, Canada-wide)\ndeveloped for the dominant (most common) species only\ndeveloped for managed forests\noften based on a limited number of samples"
+    "text": "Existing models - limitations\n\nthere are over 100 Mha of forest for which we have no yield curves. And while we do not need to report on those forests, it is of great scientific interest to also quantify the C balance of those forests, as is the plan for the next generation system.  The curves developed in this project will enable national-scale coverage, inculding unmanaged forests\n\n\n\n\nspatial extent (e.g. single jurisdiction)\ndeveloped for the most common species only\ndeveloped for managed forests\noften based on a limited number of samples"
   },
   {
     "objectID": "index.html#aim-remote-sensing-based-yield-curves-rsyc",
@@ -88,7 +88,7 @@
     "href": "index.html#next-steps",
     "title": "index",
     "section": "Next steps",
-    "text": "Next steps\n\nCharacterize uncertainty associated with yield curves\nGenerate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)\nDevelop curves for additional attributes (e.g. volume)\nDevelop curves using outputs of ensemble models (i.e., multiple AGB inputs)"
+    "text": "Next steps\n\nCharacterize uncertainty associated with yield curves\nGenerate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)\nDevelop curves for additional attributes (volume)\nDevelop curves using outputs of ensemble models (i.e., multiple AGB inputs)"
   },
   {
     "objectID": "index.html#questions",

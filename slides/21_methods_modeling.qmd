@@ -20,7 +20,7 @@ NLME:
 ```{r, fig.asp=1, fig.width=3}
 
 ggplot(data=NULL) + 
-  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.091 , 5, 0.002)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.095 , 5, 0.0015)))+
   geom_line(data=NULL, aes(x=1:150, y=CR(1:150, 200, 0.1 , 6)), color="red")+
   labs(x="Age", y="e.g. AGB")
 
