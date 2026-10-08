@@ -1,0 +1,59 @@
+## Local calibration
+
+::: columns
+::: {.column width="50%"}
+![](images/package/single_observation_calibration.png){fig-alt="A published AGB curve calibrated with one observation." fig-align="center"}
+
+::: {.figure-caption}
+**One observation** – a shrinkage-based level anchor, not a locally learned trajectory.
+:::
+:::
+
+::: {.column width="50%"}
+![](images/package/multiple_observation_calibration.png){fig-alt="A published AGB curve calibrated with five observations." fig-align="center"}
+
+::: {.figure-caption}
+**Several observations** – more evidence for the local level while the age-dependent shape remains fixed.
+:::
+:::
+:::
+
+> Retain the age-dependent shape; adjust the local magnitude (BLUP of the pixel-level random effect on $\beta_1$).
+
+::: notes
+Calibration alters magnitude, not growth shape. A single point informs a cautious BLUP
+adjustment. Several points provide stronger evidence. Neither case estimates a new
+temporal response.
+:::
+
+## Local calibration
+
+<video data-autoplay loop muted playsinline src="images/local-calibration/RSYC_curveAssign_4trajectories_AGB_vs_AGB_RSYC_maps_with_trajectories_animation.mp4" style="display:block; margin:0 auto; width:100%; max-height:720px; object-fit:contain;"></video>
+
+::: notes
+Curves are assigned to each pixel/segment and calibrated with the annual AGB
+observations, producing temporally consistent AGB trajectories.
+:::
+
+## Local calibration
+
+::: columns
+::: {.column width="50%"}
+![](images/local-calibration/RSYC_localCalib_part1.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/local-calibration/RSYC_localCalib_part2.png){fig-align="center"}
+:::
+:::
+
+::: text60
+Annual AGB time series derived from locally calibrated RSYC curves (1984–2024, 30 m) will be openly available for download.
+
+*In review:* Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. **Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada's forests**. Submitted to Forest Ecology and Management on 2026-10-01.
+:::
+
+::: notes
+National map of temporally calibrated AGB, a 5 × 5 km subset showing the original and
+calibrated time series, and example pixel trajectories.
+:::

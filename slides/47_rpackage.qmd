@@ -1,0 +1,98 @@
+## RSYC R package
+
+::: columns
+::: {.column width="55%" .text80}
+- Distributes the full RSYC model catalogue (AGB & volume; tiles & ecological strata)
+- Consistent interface – same call for any species, attribute and spatial level
+- Discover which models are available, predict by age, calibrate with local observations
+- Build curve datasets joined to spatial boundaries (GeoPackage export)
+- Model parameters also available as plain CSV – usable outside R
+
+```r
+remotes::install_github("ptompalski/RSYC")
+```
+:::
+
+::: {.column width="45%" .fn-table}
+| Task | Functions |
+|:--|:--|
+| Predict & build datasets | `predict_rsyc()`<br>`calibrate_rsyc()`<br>`build_rsyc_dataset()` |
+| Discover models | `available_rsyc_models()`<br>`rsyc_species()`<br>`rsyc_strata()`<br>`species_codes()` |
+| Spatial boundaries | `rsyc_boundaries()`<br>`download_rsyc_boundaries()` |
+| Data | `RSYC_models` |
+
+[ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)
+:::
+:::
+
+## RSYC R package – examples
+
+::: columns
+::: {.column width="50%"}
+**Which models are available?**
+
+```r
+available_rsyc_models(
+  response = "volume",
+  species = "PICE.GLA",
+  strata_level = "ecoregion"
+)
+```
+
+```text
+# A tibble: 74 × 11  (selected columns shown)
+  strata_name              strata_code species  model_version
+1 Appalachians             117         PICE.GLA v20260923
+2 Northern New Brunswick … 118         PICE.GLA v20260923
+3 Annapolis-Minas Lowlands 126         PICE.GLA v20260923
+4 Atlantic Coast           125         PICE.GLA v20260923
+5 Cape Breton Highlands    129         PICE.GLA v20260923
+# ℹ 69 more rows
+```
+:::
+
+::: {.column width="50%"}
+**Predict volume by age**
+
+```r
+predict_rsyc(
+  response = "volume",
+  species = "PICE.MAR",
+  age = c(20, 40, 80, 100, 120),
+  strata_level = "ecodistrict",
+  strata_id = 522
+)
+```
+
+```text
+[1]  31.54869  62.33402  92.98444  99.94032 104.56767
+```
+
+::: text60
+Black spruce, ecodistrict 522 (Ainslie Uplands); m³ ha⁻¹
+:::
+:::
+:::
+
+## Model updates & versioning
+
+::: columns
+::: {.column width="60%" .text80}
+- Models updated on a **two-year cycle**, matching the NTEMS updates (new AGB, age and species time series)
+- Each release is explicitly versioned (e.g., `v20260709` → `v20260923`)
+  - `model_version` stored with every curve and in generated dataset metadata
+  - stable `model_id` for every curve
+- Release notes document changes in coefficients and coverage
+- Parameters distributed as CSV with a checksum manifest; spatial boundaries versioned separately
+- Record `model_id` and `model_version` with any RSYC-derived product
+:::
+
+::: {.column width="40%" .text60}
+**Current release: `v20260923`**
+
+- 27,208 curves
+- corrected ecodistrict sampling
+- ecological models limited to the 12 forested ecozones
+- new numeric ecological strata codes (`strata_code`)
+:::
+:::

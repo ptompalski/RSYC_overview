@@ -1,6 +1,3 @@
-## Next steps
+## Next steps: comparison with traditional models
 
- - Characterize uncertainty associated with yield curves
- - Generate curves for different spatial units of interest (e.g., ecodistricts, ecoregions)
- - Develop curves for additional attributes (volume)
- - Develop curves using outputs of ensemble models (i.e., multiple AGB inputs)
+![](images/RSYC_vs_metamodels.png){fig-align="center" height="700"}

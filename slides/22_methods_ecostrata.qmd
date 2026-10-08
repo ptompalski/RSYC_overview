@@ -1,0 +1,65 @@
+## Spatial units: eco-stratification
+
+![](images/eco-strata/black_spruce_nested_strata_volume_curves.png){fig-align="center"}
+
+::: notes
+Example for black spruce and total volume, illustrating how the hierarchy works.
+From the ecozone level (e.g., Boreal Plains) down to ecoprovince (Boreal Foothills),
+ecoregion (Western Alberta Upland) and the individual ecodistricts. Curves become
+increasingly spatially specific, and separate more at finer levels. More detailed
+does not automatically mean better.
+:::
+
+## Model library overview
+
+- Forest attribute: AGB, total volume
+
+- Species-specific or multi-species (Generic  →  Conifer / Broadleaf  →  Species)
+
+- Spatial representation: Tile, Ecozone → Ecoprovince → Ecoregion → Ecodistrict
+
+- Model formulation: National, Regional
+
+- Uncertainty
+
+::: notes
+Two response variables; different levels of biological specificity; tiles plus the
+nested ecological hierarchy; national and regional formulations.
+:::
+
+## The `v20260923` catalogue contains 27,208 curves
+
+:::: columns
+::: {.column width="58%"}
+| Spatial level | Units | AGB | Volume |
+|:--|--:|--:|--:|
+| 150 km tile | 385 | 2,443 | 2,443 |
+| Ecozone | 12 | 142 | 143 |
+| Ecoprovince | 36 | 340 | 346 |
+| Ecoregion | 138 | 1,086 | 1,101 |
+| Ecodistrict | 672 | 4,611 | 4,637 |
+| **National curves** | | **8,622** | **8,670** |
+:::
+
+::: {.column width="40%"}
+<div class="big-number">27,208</div>
+
+::: text80
+- AGB and total volume
+- 29 species plus generic, coniferous and broadleaf groups
+- five spatial levels: tiles + four nested ecological levels (12 forested ecozones)
+- **17,292** national curves used by the R package prediction functions
+- **9,916** regional-fit curves retained in the catalogue
+:::
+:::
+::::
+
+::: {.figure-caption}
+RSYC model catalogue `v20260923` ([ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC/)).
+:::
+
+::: notes
+The release contains 27,208 catalogue rows, of which package prediction functions use
+the 17,292 national curves. Regional-fit records preserve development provenance and
+comparison evidence. Ecological models are limited to the 12 forested ecozones.
+:::

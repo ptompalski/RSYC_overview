@@ -9,9 +9,11 @@ Tompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. **Na
 
 Tompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. **Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data**. Forest Ecology and Management 561, 121894. [doi.org/10.1016/j.foreco.2024.121894](https://doi.org/10.1016/j.foreco.2024.121894)
 
+In review:
+
+Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. **Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada's forests**. Submitted to Forest Ecology and Management on 2026-10-01.
+
 R package: **[https://ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)**
 
 This presentation: **[https://ptompalski.github.io/RSYC_overview/](https://ptompalski.github.io/RSYC_overview/)**
 :::
-
-

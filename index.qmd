@@ -1,35 +1,34 @@
 ---
-title: ""
-author: ""
+title: "Remote Sensing-based Yield Curves (RSYC) for Canada's Forested Ecozones"
+author:
+  - Piotr Tompalski
+  - Txomin Hermosilla
+  - Evan Muise
+  - Sharad K. Baral
+  - Michael A. Wulder
+  - Joanne C. White
+  - Werner A. Kurz
+  - José Riofrío
 format:
-  revealjs:
-    self-contained: true
-    theme: simple
-    embed-resources: true
-    title-slide: false
-    # logo: images\NRCan_CFS_logo_PT_englishOnly_small.png
+  cfs-revealjs:
+    cfs-corporate-signature: images/NRCan_CFS_logo_PT_englishOnly.svg
     footer: "Remote Sensing-based Yield Curves | piotr.tompalski@nrcan-rncan.gc.ca"
-    margin: 0.1
-    slide-number: true
+    slide-number: c/t
     show-slide-number: all
+    embed-resources: true
     scrollable: false
     chalkboard: false
-    revealjs-plugins:
-     - plugin/fullscreen
-    css: assets/style.css
+    css: assets/style-cfs.css
 editor: source
 bibliography: references.bib
 fig-dpi: 300
 ---
-{{< include slides/00_title.qmd >}}
 
-<!-- intro - what are yield curves? -->
 {{< include slides/01_intro.qmd >}}
 {{< include slides/01_intro2.qmd >}}
 {{< include slides/01_intro3.qmd >}}
 
 {{< include slides/10_aim.qmd >}}
-
 
 <!-- workflow -->
 {{< include slides/20_methods_workflow.qmd >}}
@@ -38,17 +37,20 @@ fig-dpi: 300
 {{< include slides/20_methods_approach.qmd >}}
 {{< include slides/21_methods_modeling.qmd >}}
 
+<!-- eco-stratification and model library -->
+{{< include slides/22_methods_ecostrata.qmd >}}
+
 <!-- results -->
-{{< include slides/30_results1.qmd >}}
 {{< include slides/30_results2.qmd >}}
 
-<!-- validatation -->
-{{< include slides/40_evaluation1.qmd >}}
-{{< include slides/40_evaluation2.qmd >}}
-{{< include slides/40_evaluation3.qmd >}}
-{{< include slides/40_evaluation4.qmd >}}
-{{< include slides/40_evaluation5.qmd >}}
-{{< include slides/40_evaluation6.qmd >}}
+<!-- validation -->
+{{< include slides/40_validation.qmd >}}
+
+<!-- local calibration -->
+{{< include slides/45_local_calibration.qmd >}}
+
+<!-- R package and model updates -->
+{{< include slides/47_rpackage.qmd >}}
 
 <!-- next steps -->
 {{< include slides/50_nextSteps.qmd >}}

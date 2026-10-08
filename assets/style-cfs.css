@@ -1,0 +1,106 @@
+/* Project-specific additions to the cfs-revealjs theme */
+
+.text60 {
+  font-size: 60%;
+}
+
+.text80 {
+  font-size: 80%;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.reveal .references,
+.reveal #refs {
+  font-size: 60%;
+}
+
+.reveal .big-number {
+  color: var(--cfs-forest);
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 0.3em;
+}
+
+.reveal .columns img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal .column > p:has(> code),
+.reveal .column div.sourceCode {
+  max-width: 100%;
+}
+
+.reveal .column pre code {
+  font-size: 0.95em;
+}
+
+/* Scrolling viewport for very tall validation figure */
+.pdf-scroll-viewport {
+  width: 60%;
+  height: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--cfs-rule);
+  position: relative;
+  background: #fff;
+}
+
+.pdf-scroll-viewport img,
+.pdf-scroll-viewport p {
+  margin: 0 !important;
+}
+
+.pdf-scroll-viewport img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: unset !important;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reveal .slides section.present .pdf-scroll-viewport img {
+  animation: pdf-scroll 40s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes pdf-scroll {
+  0%   { transform: translateY(0); }
+  4%   { transform: translateY(0); }
+  8%   { transform: translateY(calc((-100% + 700px) * 0.12)); }
+  16%  { transform: translateY(calc((-100% + 700px) * 0.12)); }
+  20%  { transform: translateY(calc((-100% + 700px) * 0.22)); }
+  28%  { transform: translateY(calc((-100% + 700px) * 0.22)); }
+  32%  { transform: translateY(calc((-100% + 700px) * 0.36)); }
+  40%  { transform: translateY(calc((-100% + 700px) * 0.36)); }
+  44%  { transform: translateY(calc((-100% + 700px) * 0.48)); }
+  52%  { transform: translateY(calc((-100% + 700px) * 0.48)); }
+  56%  { transform: translateY(calc((-100% + 700px) * 0.62)); }
+  64%  { transform: translateY(calc((-100% + 700px) * 0.62)); }
+  68%  { transform: translateY(calc((-100% + 700px) * 0.78)); }
+  76%  { transform: translateY(calc((-100% + 700px) * 0.78)); }
+  80%  { transform: translateY(calc((-100% + 700px) * 1.0)); }
+  92%  { transform: translateY(calc((-100% + 700px) * 1.0)); }
+  100% { transform: translateY(0); }
+}
+
+.reveal .fn-table table {
+  font-size: 0.75em;
+}
+
+.reveal .fn-table table code {
+  font-size: 1em;
+}
+
+.reveal .columns pre code {
+  font-size: 1.1em;
+  line-height: 1.3;
+}

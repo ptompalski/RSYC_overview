@@ -1,3 +1,19 @@
-## Tiling
+## Tiling & eco-stratification
 
+::: columns
+::: {.column width="50%"}
 ![](images/RSYC_tiling.png){fig-align="center"}
+
+::: {.figure-caption}
+**150 × 150 km tiles** – regular, spatially consistent modelling units
+:::
+:::
+
+::: {.column width="50%"}
+![](images/eco-strata/canada_nested_ecological_strata.png){fig-align="center"}
+
+::: {.figure-caption}
+**Nested ecological strata** – ecozone → ecoprovince → ecoregion → ecodistrict
+:::
+:::
+:::

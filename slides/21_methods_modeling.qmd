@@ -10,9 +10,16 @@ $$
 
 NLME:
 
--   nested tile/pixel random effect
--   random parameter: $\beta_1$
+-   random parameter: $\beta_1$ (asymptote)
+-   tile models: nested tile / pixel random effect
+-   eco-strata models: nested ecozone / ecoprovince / ecoregion / ecodistrict / pixel random effects
+-   one model per species (group) yields curves at all four ecological levels:
 
+::: text80
+$$
+\beta_{1,\text{ecodistrict}} = \beta_1 + b_{\text{ecozone}} + b_{\text{ecoprovince}} + b_{\text{ecoregion}} + b_{\text{ecodistrict}}
+$$
+:::
 
 :::
 
