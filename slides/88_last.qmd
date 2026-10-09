@@ -2,7 +2,6 @@
 
 <br>
 
-::: {.text60}
 Publications (open access):
 
 Tompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. **National remote sensing-derived aboveground biomass yield curves for Canada**. Forestry: An International Journal Of Forest Research. [doi.org/10.1093/forestry/cpaf067](https://doi.org/10.1093/forestry/cpaf067)
@@ -16,4 +15,3 @@ Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J.
 R package: **[https://ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC)**
 
 This presentation: **[https://ptompalski.github.io/RSYC_overview/](https://ptompalski.github.io/RSYC_overview/)**
-:::

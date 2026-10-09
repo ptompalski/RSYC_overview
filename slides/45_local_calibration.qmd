@@ -37,7 +37,7 @@ observations, producing temporally consistent AGB trajectories.
 
 ## Local calibration
 
-::: columns
+::: {.columns .calib-pair}
 ::: {.column width="50%"}
 ![](images/local-calibration/RSYC_localCalib_part1.png){fig-align="center"}
 :::
@@ -47,11 +47,9 @@ observations, producing temporally consistent AGB trajectories.
 :::
 :::
 
-::: text60
 Annual AGB time series derived from locally calibrated RSYC curves (1984–2024, 30 m) will be openly available for download.
 
 *In review:* Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. **Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada's forests**. Submitted to Forest Ecology and Management on 2026-10-01.
-:::
 
 ::: notes
 National map of temporally calibrated AGB, a 5 × 5 km subset showing the original and

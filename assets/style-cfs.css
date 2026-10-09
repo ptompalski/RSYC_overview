@@ -13,11 +13,6 @@
   text-align: center;
 }
 
-.reveal .references,
-.reveal #refs {
-  font-size: 60%;
-}
-
 .reveal .big-number {
   color: var(--cfs-forest);
   font-size: 3em;
@@ -92,10 +87,6 @@
   100% { transform: translateY(0); }
 }
 
-.reveal .fn-table table {
-  font-size: 0.75em;
-}
-
 .reveal .fn-table table code {
   font-size: 1em;
 }
@@ -103,4 +94,18 @@
 .reveal .columns pre code {
   font-size: 1.1em;
   line-height: 1.3;
+}
+
+.reveal figcaption,
+.reveal .figure-caption,
+.reveal .source-note {
+  font-size: 0.24em;
+}
+.reveal table {
+  font-size: 1em;
+}
+
+.reveal .calib-pair img {
+  max-height: 400px;
+  width: auto;
 }

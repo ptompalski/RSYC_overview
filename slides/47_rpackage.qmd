@@ -1,7 +1,7 @@
 ## RSYC R package
 
 ::: columns
-::: {.column width="55%" .text80}
+::: {.column width="55%"}
 - Distributes the full RSYC model catalogue (AGB & volume; tiles & ecological strata)
 - Consistent interface – same call for any species, attribute and spatial level
 - Discover which models are available, predict by age, calibrate with local observations
@@ -68,16 +68,14 @@ predict_rsyc(
 [1]  31.54869  62.33402  92.98444  99.94032 104.56767
 ```
 
-::: text60
 Black spruce, ecodistrict 522 (Ainslie Uplands); m³ ha⁻¹
-:::
 :::
 :::
 
 ## Model updates & versioning
 
 ::: columns
-::: {.column width="60%" .text80}
+::: {.column width="60%"}
 - Models updated on a **two-year cycle**, matching the NTEMS updates (new AGB, age and species time series)
 - Each release is explicitly versioned (e.g., `v20260709` → `v20260923`)
   - `model_version` stored with every curve and in generated dataset metadata
@@ -87,7 +85,7 @@ Black spruce, ecodistrict 522 (Ainslie Uplands); m³ ha⁻¹
 - Record `model_id` and `model_version` with any RSYC-derived product
 :::
 
-::: {.column width="40%" .text60}
+::: {.column width="40%"}
 **Current release: `v20260923`**
 
 - 27,208 curves

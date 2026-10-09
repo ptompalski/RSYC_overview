@@ -2,7 +2,7 @@
 
 ::: columns
 
-::: {.column width="30%" .text80}
+::: {.column width="30%"}
 
 - Independent validation with national field plot data (MAGPlot)
 
@@ -53,13 +53,11 @@ whether the curves follow the general age-related pattern in the field observati
 | Median RMSE     | 37.1 Mg ha⁻¹   | 67.6 m³ ha⁻¹   |
 | Median bias     | −12.2 Mg ha⁻¹  | −10.7 m³ ha⁻¹  |
 
-::: {.text60}
 
 - **Best species-specific models:** subalpine fir, eastern white-cedar, and trembling aspen; black spruce
 
 - **Weakest models** yellow birch, Sitka spruce, and tamarack
 
-:::
 
 :::
 

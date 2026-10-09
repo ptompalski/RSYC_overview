@@ -19,6 +19,8 @@ format:
     scrollable: false
     chalkboard: false
     css: assets/style-cfs.css
+    transition: none
+    background-transition: none
 editor: source
 bibliography: references.bib
 fig-dpi: 300
