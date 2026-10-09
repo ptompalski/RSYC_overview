@@ -8,6 +8,14 @@
   font-size: 80%;
 }
 
+/* The theme's p/li max-width is in em, so it shrinks with smaller text */
+.reveal .text60 p,
+.reveal .text60 li,
+.reveal .text80 p,
+.reveal .text80 li {
+  max-width: none;
+}
+
 .center {
   margin: auto;
   text-align: center;
@@ -99,7 +107,7 @@
 .reveal figcaption,
 .reveal .figure-caption,
 .reveal .source-note {
-  font-size: 0.24em;
+  font-size: 0.7em;
 }
 .reveal table {
   font-size: 1em;

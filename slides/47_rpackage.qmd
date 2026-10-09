@@ -74,23 +74,14 @@ Black spruce, ecodistrict 522 (Ainslie Uplands); m³ ha⁻¹
 
 ## Model updates & versioning
 
-::: columns
-::: {.column width="60%"}
+
 - Models updated on a **two-year cycle**, matching the NTEMS updates (new AGB, age and species time series)
 - Each release is explicitly versioned (e.g., `v20260709` → `v20260923`)
   - `model_version` stored with every curve and in generated dataset metadata
   - stable `model_id` for every curve
 - Release notes document changes in coefficients and coverage
-- Parameters distributed as CSV with a checksum manifest; spatial boundaries versioned separately
-- Record `model_id` and `model_version` with any RSYC-derived product
-:::
+- Parameters distributed as CSV (no need to install the R package to access the models)
 
-::: {.column width="40%"}
-**Current release: `v20260923`**
 
-- 27,208 curves
-- corrected ecodistrict sampling
-- ecological models limited to the 12 forested ecozones
-- new numeric ecological strata codes (`strata_code`)
-:::
-:::
+
+

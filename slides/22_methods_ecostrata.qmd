@@ -27,7 +27,7 @@ Two response variables; different levels of biological specificity; tiles plus t
 nested ecological hierarchy; national and regional formulations.
 :::
 
-## The `v20260923` catalogue contains 27,208 curves
+## Yield curve catalogue 
 
 :::: columns
 ::: {.column width="58%"}
@@ -41,20 +41,19 @@ nested ecological hierarchy; national and regional formulations.
 | **National curves** | | **8,622** | **8,670** |
 :::
 
+::: {.column width="2%"}
+:::
+
 ::: {.column width="40%"}
-<div class="big-number">27,208</div>
 
 - AGB and total volume
 - 29 species plus generic, coniferous and broadleaf groups
 - five spatial levels: tiles + four nested ecological levels (12 forested ecozones)
-- **17,292** national curves used by the R package prediction functions
-- **9,916** regional-fit curves retained in the catalogue
+- **17,292** national, **9,916** regional, **27,208** total 
 :::
 ::::
 
-::: {.figure-caption}
-RSYC model catalogue `v20260923` ([ptompalski.github.io/RSYC](https://ptompalski.github.io/RSYC/)).
-:::
+
 
 ::: notes
 The release contains 27,208 catalogue rows, of which package prediction functions use

@@ -41,6 +41,7 @@ fig-dpi: 300
 
 <!-- eco-stratification and model library -->
 {{< include slides/22_methods_ecostrata.qmd >}}
+{{< include slides/23_methods_national_regional.qmd >}}
 
 <!-- results -->
 {{< include slides/30_results2.qmd >}}

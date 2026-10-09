@@ -5,15 +5,12 @@
 Model form after [@fortin_reconciling_2022]:
 
 $$
-AGB = \beta_1  e^{-\beta_4 age}  (1 - e^{-\beta_2  age})^{\beta_3}
+y = \beta_1  e^{-\beta_4 age}  (1 - e^{-\beta_2  age})^{\beta_3}
 $$
-
-NLME:
 
 -   random parameter: $\beta_1$ (asymptote)
 -   tile models: nested tile / pixel random effect
 -   eco-strata models: nested ecozone / ecoprovince / ecoregion / ecodistrict / pixel random effects
--   one model per species (group) yields curves at all four ecological levels
 
 $$
 \begin{aligned}

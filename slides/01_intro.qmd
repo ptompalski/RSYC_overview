@@ -24,14 +24,14 @@ CR <- function(age, b1, b2, b3) { #Chapman-Richards
 ```
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="35%"}
 -   function of age & species
 -   project forest attributes into the future
 -   yield curves: average stand attribute vs age
 -   growth simulators: more complex, simulate multiple linked stand attributes through time
 :::
 
-::: {.column width="50%"}
+::: {.column width="65%"}
 ```{r, fig.asp=1, fig.width=4}
 ggplot(data=NULL) + 
   geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.095 , 5, 0.0015)))+

@@ -1,0 +1,34 @@
+## National vs regional models
+
+:::: columns
+::: {.column width="48%"}
+**National**
+
+- One model fitted across Canada
+- Shared curve shape ($\beta_2, \beta_3, \beta_4$); strata adjust the asymptote only
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+**Regional**
+
+- Separate model fitted within each region
+- Region-specific curve shape
+- Captures local patterns but has limited coverage
+:::
+::::
+
+![](images/eco-strata/national_vs_regional_curve_comparison.png){fig-align="center" width="85%" fig-alt="Paired comparison of national and regional RSYC curves."}
+
+::: notes
+National models pool all data across Canada: the curve shape is shared and each stratum
+only shifts the asymptote through random effects, which gives stable curves even for
+data-poor strata. Regional models are fitted independently within each region, so the
+shape of the curve can differ between regions, at the cost of smaller sample sizes.
+The examples show that the two fits can diverge (left) or be nearly identical (right).
+The package prediction functions use the national curves; regional fits are kept in the
+catalogue for comparison.
+:::

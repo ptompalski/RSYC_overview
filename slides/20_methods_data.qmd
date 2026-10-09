@@ -1,9 +1,10 @@
 ## Data
 
+-   Landsat-derived **AGB** time series (1984-2021) [@matasci_large-area_2018]
+-   Landsat-derived **age** [@maltman_estimating_2023]
+-   Landsat-derived dominant **species** [@hermosilla_mapping_2022]
+
 ::: center
 ![](images/data.png)
 :::
 
--   Landsat-derived **AGB** time series (1984-2021) [@matasci_large-area_2018]
--   Landsat-derived **age** [@maltman_estimating_2023]
--   Landsat-derived dominant **species** [@hermosilla_mapping_2022]

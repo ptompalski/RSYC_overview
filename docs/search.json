@@ -32,7 +32,7 @@
     "href": "index.html#data",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Data",
-    "text": "Data\n\n\n\n\nLandsat-derived AGB time series (1984-2021) (Matasci et al. 2018)\nLandsat-derived age (Maltman et al. 2023)\nLandsat-derived dominant species (Hermosilla et al. 2022)"
+    "text": "Data\n\nLandsat-derived AGB time series (1984-2021) (Matasci et al. 2018)\nLandsat-derived age (Maltman et al. 2023)\nLandsat-derived dominant species (Hermosilla et al. 2022)"
   },
   {
     "objectID": "index.html#tiling",
@@ -60,14 +60,14 @@
     "href": "index.html#modeling",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Modeling",
-    "text": "Modeling\n\n\nModel form after (Fortin and Lavoie 2022):\n\\[\nAGB = \\beta_1  e^{-\\beta_4 age}  (1 - e^{-\\beta_2  age})^{\\beta_3}\n\\]\nNLME:\n\nrandom parameter: \\(\\beta_1\\) (asymptote)\ntile models: nested tile / pixel random effect\neco-strata models: nested ecozone / ecoprovince / ecoregion / ecodistrict / pixel random effects\none model per species (group) yields curves at all four ecological levels\n\n\\[\n\\begin{aligned}\n\\text{tile:}\\quad \\beta_{1,\\text{tile}} &= \\beta_1 + b_{\\text{tile}} \\\\\n\\text{eco-strata:}\\quad \\beta_{1,\\text{ecodistrict}} &= \\beta_1 + b_{\\text{ecozone}} + b_{\\text{ecoprovince}} + b_{\\text{ecoregion}} + b_{\\text{ecodistrict}}\n\\end{aligned}\n\\]"
+    "text": "Modeling\n\n\nModel form after (Fortin and Lavoie 2022):\n\\[\ny = \\beta_1  e^{-\\beta_4 age}  (1 - e^{-\\beta_2  age})^{\\beta_3}\n\\]\n\nrandom parameter: \\(\\beta_1\\) (asymptote)\ntile models: nested tile / pixel random effect\neco-strata models: nested ecozone / ecoprovince / ecoregion / ecodistrict / pixel random effects\n\n\\[\n\\begin{aligned}\n\\text{tile:}\\quad \\beta_{1,\\text{tile}} &= \\beta_1 + b_{\\text{tile}} \\\\\n\\text{eco-strata:}\\quad \\beta_{1,\\text{ecodistrict}} &= \\beta_1 + b_{\\text{ecozone}} + b_{\\text{ecoprovince}} + b_{\\text{ecoregion}} + b_{\\text{ecodistrict}}\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "index.html#results",
     "href": "index.html#results",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Results",
-    "text": "Results\n\n\n\n\n\n\nExample AGB yield curves for black spruce, Douglas-fir and trembling aspen across the ecological strata."
+    "text": "Results"
   },
   {
     "objectID": "index.html#model-evaluation",
@@ -95,7 +95,7 @@
     "href": "index.html#questions",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Questions?",
-    "text": "Questions?\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. doi.org/10.1016/j.foreco.2024.121894\nIn review:\nTompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada’s forests. Submitted to Forest Ecology and Management on 2026-10-01.\nR package: https://ptompalski.github.io/RSYC\nThis presentation: https://ptompalski.github.io/RSYC_overview/"
+    "text": "Questions?\n\n\nPublications (open access):\nTompalski, P., Hermosilla, T., Baral, S.K., Wulder, M.A., White, J.C. 2025. National remote sensing-derived aboveground biomass yield curves for Canada. Forestry: An International Journal Of Forest Research. doi.org/10.1093/forestry/cpaf067\nTompalski, P., Wulder, M.A., White, J.C., Hermosilla, T., Riofrío, J., Kurz, W.A., 2024. Developing aboveground biomass yield curves for dominant boreal tree species from time series remote sensing data. Forest Ecology and Management 561, 121894. doi.org/10.1016/j.foreco.2024.121894\nIn review:\nTompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada’s forests. Submitted to Forest Ecology and Management on 2026-10-01.\nR package: https://ptompalski.github.io/RSYC\nThis presentation: https://ptompalski.github.io/RSYC_overview/"
   },
   {
     "objectID": "index.html#references",
@@ -305,7 +305,7 @@
     "href": "index.html#local-calibration",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Local calibration",
-    "text": "Local calibration\n\n\n\n\n\n\n\n\nOne observation – a shrinkage-based level anchor, not a locally learned trajectory.\n\n\n\n\n\n\n\n\nSeveral observations – more evidence for the local level while the age-dependent shape remains fixed.\n\n\n\nRetain the age-dependent shape; adjust the local magnitude (BLUP of the pixel-level random effect on \\(\\beta_1\\)).\n\n\nCalibration alters magnitude, not growth shape. A single point informs a cautious BLUP adjustment. Several points provide stronger evidence. Neither case estimates a new temporal response."
+    "text": "Local calibration\n\n\n\n\n\n\n\n\nOne observation – a shrinkage-based level anchor, not a locally learned trajectory.\n\n\n\n\n\n\n\n\nSeveral observations – more evidence for the local level while the age-dependent shape remains fixed.\n\n\n\nCalibration alters magnitude, not growth shape. A single point informs a cautious BLUP adjustment. Several points provide stronger evidence. Neither case estimates a new temporal response."
   },
   {
     "objectID": "index.html#local-calibration-1",
@@ -319,7 +319,7 @@
     "href": "index.html#local-calibration-2",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Local calibration",
-    "text": "Local calibration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnnual AGB time series derived from locally calibrated RSYC curves (1984–2024, 30 m) will be openly available for download.\nIn review: Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada’s forests. Submitted to Forest Ecology and Management on 2026-10-01.\n\nNational map of temporally calibrated AGB, a 5 × 5 km subset showing the original and calibrated time series, and example pixel trajectories."
+    "text": "Local calibration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnnual AGB time series derived from locally calibrated RSYC curves (1984–2024, 30 m) will be openly available for download.\nIn review: Tompalski, P., Hermosilla, T., Baral, S., White, J.C., Wulder, M.A., Riofrio, J., 2026. Reconciling remote sensing observations and forest growth dynamics to derive spatially explicit and temporally consistent annual aboveground biomass trajectories for Canada’s forests. Submitted to Forest Ecology and Management on 2026-10-01.\n\n\nNational map of temporally calibrated AGB, a 5 × 5 km subset showing the original and calibrated time series, and example pixel trajectories."
   },
   {
     "objectID": "index.html#rsyc-r-package",
@@ -340,7 +340,7 @@
     "href": "index.html#model-updates-versioning",
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Model updates & versioning",
-    "text": "Model updates & versioning\n\n\n\nModels updated on a two-year cycle, matching the NTEMS updates (new AGB, age and species time series)\nEach release is explicitly versioned (e.g., v20260709 → v20260923)\n\nmodel_version stored with every curve and in generated dataset metadata\nstable model_id for every curve\n\nRelease notes document changes in coefficients and coverage\nParameters distributed as CSV with a checksum manifest; spatial boundaries versioned separately\nRecord model_id and model_version with any RSYC-derived product\n\n\nCurrent release: v20260923\n\n27,208 curves\ncorrected ecodistrict sampling\necological models limited to the 12 forested ecozones\nnew numeric ecological strata codes (strata_code)"
+    "text": "Model updates & versioning\n\nModels updated on a two-year cycle, matching the NTEMS updates (new AGB, age and species time series)\nEach release is explicitly versioned (e.g., v20260709 → v20260923)\n\nmodel_version stored with every curve and in generated dataset metadata\nstable model_id for every curve\n\nRelease notes document changes in coefficients and coverage\nParameters distributed as CSV (no need to install the R package to access the models)"
   },
   {
     "objectID": "index.html#next-steps-comparison-with-traditional-models",
@@ -348,5 +348,26 @@
     "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
     "section": "Next steps: comparison with traditional models",
     "text": "Next steps: comparison with traditional models"
+  },
+  {
+    "objectID": "slides/00_title.html",
+    "href": "slides/00_title.html",
+    "title": "",
+    "section": "",
+    "text": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones"
+  },
+  {
+    "objectID": "index.html#yield-curve-catalogue",
+    "href": "index.html#yield-curve-catalogue",
+    "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
+    "section": "Yield curve catalogue",
+    "text": "Yield curve catalogue\n\n\n\n\n\nSpatial level\nUnits\nAGB\nVolume\n\n\n\n\n150 km tile\n385\n2,443\n2,443\n\n\nEcozone\n12\n142\n143\n\n\nEcoprovince\n36\n340\n346\n\n\nEcoregion\n138\n1,086\n1,101\n\n\nEcodistrict\n672\n4,611\n4,637\n\n\nNational curves\n\n8,622\n8,670\n\n\n\n\n\n\n\nAGB and total volume\n29 species plus generic, coniferous and broadleaf groups\nfive spatial levels: tiles + four nested ecological levels (12 forested ecozones)\n17,292 national, 9,916 regional, 27,208 total\n\n\n\nThe release contains 27,208 catalogue rows, of which package prediction functions use the 17,292 national curves. Regional-fit records preserve development provenance and comparison evidence. Ecological models are limited to the 12 forested ecozones."
+  },
+  {
+    "objectID": "index.html#national-vs-regional-models",
+    "href": "index.html#national-vs-regional-models",
+    "title": "Remote Sensing-based Yield Curves (RSYC) for Canada’s Forested Ecozones",
+    "section": "National vs regional models",
+    "text": "National vs regional models\n\n\nNational\n\nOne model fitted across Canada\nShared curve shape (\\(\\beta_2, \\beta_3, \\beta_4\\)); strata adjust the asymptote only\n\n\n\n\nRegional\n\nSeparate model fitted within each region\nRegion-specific curve shape\nCaptures local patterns but has limited coverage\n\n\n\n\nNational models pool all data across Canada: the curve shape is shared and each stratum only shifts the asymptote through random effects, which gives stable curves even for data-poor strata. Regional models are fitted independently within each region, so the shape of the curve can differ between regions, at the cost of smaller sample sizes. The examples show that the two fits can diverge (left) or be nearly identical (right). The package prediction functions use the national curves; regional fits are kept in the catalogue for comparison."
   }
 ]

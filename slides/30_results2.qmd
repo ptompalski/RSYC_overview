@@ -10,11 +10,9 @@
 
 ::: {.column width="55%"}
 
-![](images/eco-strata/boreal_species_curve_examples.png)
+![](images/p04_ecodistrict_volume_animation.gif)
 
-::: {.figure-caption}
-Example AGB yield curves for black spruce, Douglas-fir and trembling aspen across the ecological strata.
-:::
 
 :::
 :::
+
