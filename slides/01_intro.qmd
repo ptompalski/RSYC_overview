@@ -32,7 +32,7 @@ CR <- function(age, b1, b2, b3) { #Chapman-Richards
 :::
 
 ::: {.column width="65%"}
-```{r, fig.asp=1, fig.width=4}
+```{r, fig.asp=1, fig.width=4, out.width='60%', fig.align='center'}
 ggplot(data=NULL) + 
   geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.095 , 5, 0.0015)))+
   geom_line(data=NULL, aes(x=1:150, y=CR(1:150, 200, 0.1 , 6)), color="red")+
