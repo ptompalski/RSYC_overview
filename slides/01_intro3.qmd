@@ -5,7 +5,7 @@ there are over 100 Mha of forest for which we have no yield curves. And while we
 :::
 
 ::: columns
-::: {.column width="50%" .text80}
+::: {.column width="50%"}
 
 -   spatial extent (e.g. single jurisdiction)
 

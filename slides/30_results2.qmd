@@ -2,26 +2,17 @@
 ## Results
 
 ::: columns
-::: {.column width="50%" .text80}
+::: {.column width="45%"}
 
 ![](images/AGBoverTimeAnim_RSYC_generic.gif)
 
 :::
 
-::: {.column width="50%" .text80 }
+::: {.column width="55%"}
 
-National AGB yield curves (N=1892)
+![](images/p04_ecodistrict_volume_animation.gif)
 
-Multi-species:
-
-- Generic (all species) – 389
-- Coniferous – 355
-- Broadleaf – 184
-
-Species-specific:
-
-- 27 species-specific models (some for a single tile only, up to 308 for black spruce)
 
 :::
-
 :::
+

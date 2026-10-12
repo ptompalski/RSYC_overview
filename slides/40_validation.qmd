@@ -1,0 +1,69 @@
+## Validation approach
+
+::: columns
+
+::: {.column width="30%"}
+
+- Independent validation with national field plot data (MAGPlot)
+
+- Over 50,000 plots across Canada
+
+- Comparison by 20-year age classes
+
+:::
+
+::: {.column width="70%"}
+
+![](images/validation/magplot.png){fig-align="center"}
+
+:::
+
+:::
+
+::: notes
+MAGPlot: harmonized national field-plot database, >50,000 plots from multiple
+jurisdictions. Observations are not distributed uniformly. Observations are summarized
+in 20-year age classes so heavily sampled ages do not dominate the assessment.
+:::
+
+## Validation results {.unstretch}
+
+::: {.pdf-scroll-viewport}
+![](images/validation/curves_vs_plot_all_models_tall.png){.nostretch fig-align="center"}
+:::
+
+::: notes
+Full comparison between fitted curves and independent field observations. Look for
+whether the curves follow the general age-related pattern in the field observations.
+:::
+
+## Validation - overall performance
+
+::: columns
+
+::: {.column width="45%"}
+![](images/scatterplots_RSYC.png){fig-align="center"}
+:::
+
+::: {.column width="55%"}
+
+|                 | **AGB**        | **Volume**     |
+|-----------------|---------------:|---------------:|
+| Median R²       | 0.63           | 0.62           |
+| Median RMSE     | 37.1 Mg ha⁻¹   | 67.6 m³ ha⁻¹   |
+| Median bias     | −12.2 Mg ha⁻¹  | −10.7 m³ ha⁻¹  |
+
+
+- **Best species-specific models:** subalpine fir, eastern white-cedar, and trembling aspen; black spruce
+
+- **Weakest models** yellow birch, Sitka spruce, and tamarack
+
+
+:::
+
+:::
+
+::: notes
+Median R² 0.63 (AGB) and 0.62 (volume). Median RMSE ~37 Mg/ha and ~68 m³/ha. Bias
+modest and negative for both. Substantial variation among species.
+:::

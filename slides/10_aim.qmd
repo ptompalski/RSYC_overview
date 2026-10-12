@@ -1,8 +1,8 @@
-## [Aim: **R**emote **S**ensing-based **Y**ield **C**urves (RSYC)]{.r-fit-text}
+## Aim: Remote Sensing-based Yield Curves (RSYC)
 
--   National coverage <small>(all treed pixels)</small>
+-   National coverage (all treed pixels)
 
--   Species-specific <small>(not only most common tree species)</small>
+-   Species-specific (not only most common tree species)
 
 -   Consistent methodology
 

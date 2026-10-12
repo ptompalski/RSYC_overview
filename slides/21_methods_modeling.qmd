@@ -5,25 +5,30 @@
 Model form after [@fortin_reconciling_2022]:
 
 $$
-AGB = \beta_1  e^{-\beta_4 age}  (1 - e^{-\beta_2  age})^{\beta_3}
+y = \beta_1  e^{-\beta_4 age}  (1 - e^{-\beta_2  age})^{\beta_3}
 $$
 
-NLME:
+-   random parameter: $\beta_1$ (asymptote)
+-   tile models: nested tile / pixel random effect
+-   eco-strata models: nested ecozone / ecoprovince / ecoregion / ecodistrict / pixel random effects
 
--   nested tile/pixel random effect
--   random parameter: $\beta_1$
-
+$$
+\begin{aligned}
+\text{tile:}\quad \beta_{1,\text{tile}} &= \beta_1 + b_{\text{tile}} \\
+\text{eco-strata:}\quad \beta_{1,\text{ecodistrict}} &= \beta_1 + b_{\text{ecozone}} + b_{\text{ecoprovince}} + b_{\text{ecoregion}} + b_{\text{ecodistrict}}
+\end{aligned}
+$$
 
 :::
 
 ::: {.column width="40%"}
 ```{r, fig.asp=1, fig.width=3}
-
 ggplot(data=NULL) + 
-  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 200, 0.095 , 5, 0.0015)))+
-  geom_line(data=NULL, aes(x=1:150, y=CR(1:150, 200, 0.1 , 6)), color="red")+
-  labs(x="Age", y="e.g. AGB")
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.05,  1.59, -0.0001)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 150, 0.04,  1.59, 0.003)))+
+  geom_line(data=NULL, aes(x=1:150, y=CRdeclining2(1:150, 250, 0.025,  1, 0.01)))+
 
+  labs(x="Age", y="e.g. AGB")
 ```
 :::
 :::
